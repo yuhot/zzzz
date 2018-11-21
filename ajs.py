@@ -10,32 +10,32 @@ from bs4 import BeautifulSoup
 from googletrans import Translator
 import youtube_dl
 #ANTIJS_V2
-cl = LineClient(authToken='Ewl23RH1v7pYAkDwGRy8.wb+1x+ATrwACcZUumYsSUa.0pPpAiOchRilY9pV5a28LopZ90fgl/RQVNVA9OuD5qo=')
-#cl = LineClient(authToken='ISI TOKENMU  DISINI')
+#cl = LineClient(authToken='Ewl23RH1v7pYAkDwGRy8.wb+1x+ATrwACcZUumYsSUa.0pPpAiOchRilY9pV5a28LopZ90fgl/RQVNVA9OuD5qo=')
+cl = LineClient(authToken='ISI TOKENMU  DISINI')
 cl.log("Auth Token : " + str(cl.authToken))
 channel = LineChannel(cl)
 cl.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-ki = LineClient(authToken='EwVk0QafQs3VRxlaWdEf.SrrNO62JoBMwTM0dc/1lxW.vFCc1UwTti5vkTuJuyE6xCneYSSVXTAr/OA0hZo3FhY=')
-#ki = LineClient(authToken='ISI TOKENMU  DISINI')
+#ki = LineClient(authToken='EwVk0QafQs3VRxlaWdEf.SrrNO62JoBMwTM0dc/1lxW.vFCc1UwTti5vkTuJuyE6xCneYSSVXTAr/OA0hZo3FhY=')
+ki = LineClient(authToken='ISI TOKENMU  DISINI')
 ki.log("Auth Token : " + str(ki.authToken))
 channel1 = LineChannel(ki)
 ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
 
-kk = LineClient(authToken='EwW0Yzzb4mERbmqlO6Oc.RjjX/PW5a9d/mkreQyncZa.qNEJHllLkgmodmpPC0OUfirvb9JtNHWOAbGf8Pkc4hw=')
+#kk = LineClient(authToken='EwW0Yzzb4mERbmqlO6Oc.RjjX/PW5a9d/mkreQyncZa.qNEJHllLkgmodmpPC0OUfirvb9JtNHWOAbGf8Pkc4hw=')
 #kk = LineClient(authToken='ISI TOKENMU  DISINI')
-kk.log("Auth Token : " + str(kk.authToken))
-channel2 = LineChannel(kk)
-kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
+#kk.log("Auth Token : " + str(kk.authToken))
+#channel2 = LineChannel(kk)
+#kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
 
-kc = LineClient(authToken='EwkFkqVdwBzgaEgL6l5f./JXwkfp+u4nfpiyYCt3rhW.kOgr2F5K8AhrVtYyi2p4Bzlk+/gmjBek7WbCCqFAKzI=')
+#kc = LineClient(authToken='EwkFkqVdwBzgaEgL6l5f./JXwkfp+u4nfpiyYCt3rhW.kOgr2F5K8AhrVtYyi2p4Bzlk+/gmjBek7WbCCqFAKzI=')
 #kc = LineClient(authToken='ISI TOKENMU  DISINI')
-kc.log("Auth Token : " + str(kc.authToken))
-channel3 = LineChannel(kc)
-kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
+#kc.log("Auth Token : " + str(kc.authToken))
+#channel3 = LineChannel(kc)
+#kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
 
-sw = LineClient(authToken='EwesC0puBcUAcPqrOte9.hBhkoFGOWq2ca/v2aGDfkq.Ch/M4eBXa0+5liQNCwFCBfeFc63VJuKJBzoIKmD/VTc=')
-#sw = LineClient(authToken='ISI TOKENMU  DISINI')
+#sw = LineClient(authToken='EwesC0puBcUAcPqrOte9.hBhkoFGOWq2ca/v2aGDfkq.Ch/M4eBXa0+5liQNCwFCBfeFc63VJuKJBzoIKmD/VTc=')
+sw = LineClient(authToken='ISI TOKENMU  DISINI')
 sw.log("Auth Token : " + str(sw.authToken))
 channel11 = LineChannel(sw)
 sw.log("Channel Access Token : " + str(channel11.channelAccessToken))
@@ -48,12 +48,12 @@ admin = ["u9f09cfcb17d037e2936b751bd9d40ead"]
 staff = ["u9f09cfcb17d037e2936b751bd9d40ead"]
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
-Bmid = kk.getProfile().mid
-Cmid = kc.getProfile().mid
+#Bmid = kk.getProfile().mid
+#Cmid = kc.getProfile().mid
 Zmid = sw.getProfile().mid
-KAC = [cl,ki,kk,kc]
-ABC = [ki,kk,kc]
-Bots = [mid,Amid,Bmid,Cmid,Zmid]
+KAC = [cl,ki]
+ABC = [ki]
+Bots = [mid,Amid,Zmid]
 Dpk = admin + staff
 
 protectqr = []
